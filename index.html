@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Exchange</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/media.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+<body class="center">
+    <div class="container">
+        <div class="project-title animate__animated animate__backInDown">
+            <h2> Money Exchange</h2>
+        </div>
+        <button class="btn-change-themes">
+            <img class="icon" src="./imgs/Sun.svg" alt="">
+            <img class="icon" src="./imgs/Moon.svg" alt="">
+        </button>
+        <div class="convert-form">
+            <input class="amount" placeholder="$1.00" type="text">
+            <div class="action">
+                <select class="from" placeholder="" type="text"> </select>
+                <button class="swap-button"><i class='bx bx-transfer'></i></button>
+                <select class="to" placeholder="" type="text"> </select>
+            </div>
+            <button class="convert-button"> Convert</button>
+            <div class="result" id="result"></div>
+        </div>
+    </div>
+    <script src="./scripts/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+:root {
+    --white: #fff;
+    --black: #000;
+    --blackRGBA: rgba(255, 255, 255, 0.2);
+    --whiteRGBA: rgba(0, 0, 0, 0.2);
+    --backgroungDark: #181a1b;
+    --backgroungLight: #c9bebe;
+
+
+
+    --back-color: var(--backgroungLight);
+    --text-color: var(--black);
+    --Shadow: var(--whiteRGBA);
+}
+
+.dark {
+    --text-color: var(--white);
+    --Shadow: var(--blackRGBA);
+    --back-color: var(--backgroungDark);
+}
+
+
+body {
+    background-color: var(--back-color);
+    color: var(--text-color);
+    font-family: 'Lato', sans-serif;
+
+}
+
+
+.container {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.project-title {
+    font-weight: 700;
+    font-size: 6rem;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 80px;
+}
+
+.convert-form {
+    box-shadow: 0 0 10px var(--Shadow);
+    border-radius: 12px;
+    padding: 50px 150px;
+
+}
+
+.action {
+    display: flex;
+
+    gap: 30px;
+}
+
+.amount,
+.from,
+.to {
+    color: var(--text-color);
+    width: 100%;
+    box-shadow: 0 0 10px var(--Shadow);
+    border-radius: 12px;
+    border-radius: 12px;
+    padding: 12px 20px;
+    font-weight: 700;
+}
+
+.amount {
+    margin-bottom: 20px;
+}
+
+.from,
+.to {
+    text-align: center;
+    background-color: var(--back-color);
+}
+
+.from {
+    max-height: 300px;
+}
+
+.visible {
+    display: block;
+}
+
+.result {
+    text-align: center;
+    margin-top: 25px;
+    box-shadow: 0 0 10px var(--Shadow);
+    border-radius: 12px;
+    border-radius: 12px;
+    padding: 12px 20px;
+    display: none;
+    font-weight: 700;
+
+}
+
+.convert-button {
+    font-weight: 700;
+    width: 100%;
+    margin-top: 25px;
+}
+
+.btn-change-themes {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding: 5px;
+    width: 51px;
+    border-radius: 50px;
+    box-shadow: 0 0 10px var(--Shadow);
+    margin-bottom: 20px;
+}
+
+.btn-change-themes::before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background-color: #fff;
+    z-index: 0;
+    left: 2px;
+    top: 2px;
+    transition: all 0.2s ease-in;
+}
+
+.btn-change-themes--active::before {
+    left: 26px;
+}
+
+.icon {
+    position: relative;
+    z-index: 1;
+}
