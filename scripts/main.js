@@ -40,7 +40,7 @@ async function fetchExchangeRates() {
 }
 
 const popularCurrencies = [
-    'USD', 'EUR', 'JPY', 'GBP', 'AUD', 'CAD', 'CHF', 'CNY', 'SEK', 'NZD',
+    'USD', 'EUR', 'JPY', 'GBP', 'AUD', 'CAD', 'CHF', 'CNY', 'SEK', 'UAH',
     'MXN', 'SGD', 'HKD', 'NOK', 'KRW', 'TRY', 'INR', 'RUB', 'BRL', 'ZAR',
     'PLN', 'AED', 'SAR', 'MYR', 'THB', 'IDR'
 ];
